@@ -64,7 +64,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(10, 10, 10);
     width: 65px;
     height: 65px;
     border-radius: 5px;
