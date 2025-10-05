@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Montserrat';
+}
+.container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+/* Класи для підсвітки фону */
+.correct-bg {
+    background-color: #d4edda; /* Світло-зелений */
+}
+
+.incorrect-bg {
+    background-color: #f8d7da; /* Світло-червоний */
+}
+
+button {
+  background-color: #4CAF50; /* Зелений фон */
+  color: white; /* Білий текст */
+  padding: 15px 30px; /* Внутрішні відступи */
+  font-size: 18px; /* Розмір шрифту */
+  border: none; /* Без рамки */
+  border-radius: 8px; /* Закруглені кути */
+  cursor: pointer; /* Курсор при наведенні */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #45a049; /* Трохи темніший зелений при наведенні */
+  transform: scale(1.05); /* Легке збільшення */
+}
+
+button:active {
+  transform: scale(0.98); /* Натискання */
+}
+
+.start-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.question{
+    font-size: 100px;
+}
+
+.answers{
+    display: flex;
+    
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.answer:hover {
+  transform: scale(1.07); /* Легке збільшення */
+}
+
+.answer:active {
+  transform: scale(0.98); /* Натискання */
+}
